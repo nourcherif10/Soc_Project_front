@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400&display=swap');
+:root {
+    --primary: #0d6efd; 
+    --dark: #21252f;
+    --body: #888; 
+    --box-shadow: 0 8px 22px rgba(0,0,0,0,1);
+
+}
+body{ 
+    font-family: Sora, "sans-serif";
+    line-height: 1.7;
+    color: (var--body);
+}
+h1,h1,h3,h4,h5,h6,.display-4 { color: var(--dark);}
+a { color: #fff;
+text-decoration:  none;}    
+.navbar-brand { color: #2088ff}
+/*https://i.pinimg.com/564x/c8/67/3a/c8673ad4c46ade00cf3bd0049db62b16.jpg*/
+.navbar .logo { width: 160px;}
+.navbar .nav-link {
+    font-size: 14px;
+    font-weight :700 ;}
+.hero{
+    background-image: url(https://scontent.ftun10-1.fna.fbcdn.net/v/t39.30808-6/314488538_624298372809109_4174432755784665981_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=TkOzgRRfyWEAX8zNWAM&_nc_ht=scontent.ftun10-1.fna&oh=00_AfAKzAA66hKhp5_fB-cvStkeUS8dVDnmxXVh1FXsqxjPRA&oe=63C5FD62);
+    background-position: center;
+
+    background-size:cover ;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+.hero::after{
+    content: "";
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(21, 20, 51, 0.8);
+    z-index: -1;
+}
+.btn { padding: 14px 18px;
+border-width: 2px;
+border-radius: 0;
+}
+.display-4 {
+    font-size: 50px;
+    color: #fff;
+}
+
+.display-4:hover {
+    color: #0d6efdab;
+}

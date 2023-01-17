@@ -1,0 +1,28 @@
+<app-nav-formations></app-nav-formations>
+<app-side-formations></app-side-formations>
+  <router-outlet></router-outlet>
+  <div class="panel-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>nom_formation</th>
+          <th>evaluation</th>
+
+
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let formation of formations ">
+          <td>{{formation.id}}</td>
+          <td>{{formation.evaluation}}</td>
+          <td>{{formation.nameTraining}}</td>
+
+          <td><button (click)=" deleteFormation(formation.id)" class="btn btn-danger">Delete</button>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

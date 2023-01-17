@@ -1,0 +1,44 @@
+<app-navapprenants></app-navapprenants>
+<app-sideapprenants></app-sideapprenants>
+<div class="panel-body">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>firstName</th>
+        <th>lastName</th>
+        <th>password</th>
+        <th>eMail</th>
+        <th>birth</th>
+        <th>country</th>
+        <th>Occupation</th>
+        <th>sex</th>
+        <th>schoolSubject</th>
+        <th>speciality</th>
+        <th>description</th>
+        <th>nameSchool</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students ">
+        <td>{{student.id}}</td>
+        <td>{{student.firstName}}</td>
+        <td>{{student.lastName}}</td>
+        <td>{{student.password}}</td>
+        <td>{{student.eMail}}</td>
+        <td>{{student.birth}}</td>
+        <td>{{student.country}}</td>
+        <td>{{student.Occupation}}</td>
+        <td>{{student.sex}}</td>
+        <td>{{student.schoolSubject}}</td>
+        <td>{{student.speciality}}</td>
+        <td>{{student.description}}</td>
+        <td>{{student.nameSchool}}</td>
+        <td><button (click)=" deleteStudent(student.id)" class="btn btn-danger">Delete</button>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
